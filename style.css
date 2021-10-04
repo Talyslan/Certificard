@@ -1,119 +1,67 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
-
-body 
-{
-  background: linear-gradient(236.85deg, #041832 27.26%, #3468A7 96.03%);
-  font-family: 'Roboto', sans-serif;
+body {
+  font-family: "Roboto Mono", monospace;
+  text-align: center;
+  background-image: url("https://www.alura.com.br/assets/img/imersoes/dev-2021/dia-04-aluraflix-e-filmes.png");
+  background-color: #000000;
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
 }
 
-.container
-{
-  background: #ECF4FF;
-  margin: 64px;
-  border-radius: 20px;
-  box-shadow: 6px 6px 6px #0E1D2F;
-  color: #1C1C1C;
-  padding: 64px;
+.container {
+  text-align: center;
+  padding: 20px;
 }
 
-.cabecalho
-{
-  display: flex;
-  justify-content: space-between;
+.page-title {
+  color: #ffffff;
+  margin: 0 0 5px;
 }
 
-.perfil
-{
-  display: flex;
+.page-subtitle {
+  color: #ffffff;
+  margin-top: 5px;
 }
 
-.perfil-foto
-{
-  border-radius: 460px;
-  max-height: 160px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+.page-logo {
+  width: 200px;
 }
 
-.titulo
-{
-  margin-left: 16px;
+.alura-logo {
+  width: 40px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
 }
 
-.titulo h1
-{
-  font-weight: 700;
-  font-size: 36px;
+#listaFilmes img {
+  margin: 10px;
+  max-height: 250px;
 }
 
-.titulo h3
-{
-  font-weight: 400;
-  font-size: 24px;
+.form-wrapper {
+  margin: 0 0 15px;
 }
 
-.tema button
-{
-  background: #ECF4FF;
-  align-self: flex-end;
-  font-weight: 400;
-  font-size: 24px;
-  padding: 8px 16px;
-  border: 2px solid #0E1D2F;
-  box-sizing: border-box;
-  border-radius: 100px;
+.form-wrapper input {
+  display: block;
+  margin: 0 auto;
+  padding: 10px 15px;
 }
 
-.projetos
-{
-  display: flex;
-  flex-direction: column;
-  background: linear-gradient(230.65deg, #499CFE 27.49%, #9CC8FC 83.19%);
-  margin-top: 32px;
-  padding: 32px;
-  box-shadow: 2px 2px 4px rgba(16, 16, 16, 0.42);
-  border-radius: 20px;
+.form-wrapper button {
+  border: 0;
+  color: #ffffff;
+  background: #da1e26;
+  font-weight: bold;
+  padding: 15px 20px;
+  font-size: 16px;
+  border-radius: 4px;
+  margin-top: 20px;
+  cursor: pointer;
+  transition: 0.3s;
 }
 
-.projetos-titulo
-{
-  list-style: none;
-  font-weight: 700;
-  font-size: 36px;
-}
-
-.projetos-item
-{
-  list-style-type: none;
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 48px;
-}
-
-.projetos-item a
-{
-  color: #1C1C1C;
-  text-decoration: none;
-}
-
-.dark
-{
-  background: linear-gradient(236.85deg, #375B86 27.26%, #6B87A9 96.03%);
-}
-
-.dark .container
-{
-  background: #333439;
-  color: #F7F7F7;
-}
-
-.dark .projetos
-{
-  color: #1C1C1C;
-}
-
-.dark .tema button
-{
-  background: #1C1C1C;
-  color: #FFFFFF;
-  border: 2px solid #F7F7F7;
+.form-wrapper button:hover {
+  opacity: 0.8;
 }
